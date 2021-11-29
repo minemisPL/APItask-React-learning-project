@@ -1,8 +1,16 @@
 const ResultListItem = ({ item }) => {
+    const tdList = []
+
+    Object.entries(item).forEach(([, value]) => {
+         tdList.push(
+             <td>{JSON.stringify(value)}</td>
+         )
+    })
+
     return (
-        <li>
-            {JSON.stringify(item)}
-        </li>
+        <tr>
+            {tdList}
+        </tr>
     );
 };
 

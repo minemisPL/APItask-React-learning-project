@@ -1,0 +1,20 @@
+tr td{
+    outline: black solid 1px;
+    padding: 1rem;
+
+}
+
+tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff1ed;
+}
+
+.headers {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+}
